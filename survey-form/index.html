@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </header>
+
+        <form id="survey-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name" required> 
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input class="form-control" id="email" name="email" type="email" placeholder="example@domain.com" required> 
+            </div>
+
+            <!-- Age Field -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age:</label>
+                <input  class="form-control" id="number" name="age" type="number" placeholder="Age" min="13" max="120"> 
+            </div>
+
+            <!-- Gender Selection -->
+            <div class="form-group">
+                <p class="form-label">Gender:</p>
+                <div class="radio-group">
+                    <input  class="input-radio" id="male" type="radio" name="gender" value="male"> 
+                    <label for="male">Male</label>
+
+                    <input class="input-radio radio-left" id="female" type="radio" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <input class="input-radio radio-left" id="other" type="radio" name="gender" value="other">
+                    <label for="other">Other</label>
+
+                    <input class="input-radio radio-left" id="na" type="radio" name="gender" value="na">
+                    <label for="na">Prefer not to say</label>
+                </div>
+            </div>
+
+            <!-- Role Selection -->
+            <div class="form-group">
+                <p class="form-label">Which option best describes your current role?</p>
+                <select class="form-control" id="dropdown" name="rating">
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                </select>
+            </div>
+
+            <!-- Activities (Checkboxes) -->
+            <div class="form-group">
+                <p class="form-label">Tick off the activities you enjoy doing:</p>
+                <div class="checkbox-group">
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Drawing/Painting"> Drawing/Painting</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Gaming"> Gaming</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Cooking/Baking"> Cooking/Baking</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Photography/Videography"> Photography/Videography</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Reading"> Reading</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Playing a Musical Instrument"> Playing a Musical Instrument</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Coding/Programming"> Coding/Programming</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Calisthenics/Fitness Training"> Calisthenics/Fitness Training</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Gardening"> Gardening</label>
+                    <label><input class="input-checkbox" type="checkbox" name="hobby" value="Traveling"> Traveling</label>
+                </div>
+            </div>
+
+            <!-- Feelings (Textarea) -->
+            <div class="form-group">
+                <p class="form-label">How are you feeling today?</p>
+                <textarea class="form-control" id="feelings" name="feelings" placeholder="Describe how you're feeling..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit"> Submit </button>
+            </div>
+        </form>
+
+    </div>
+  </body>
+</html>
